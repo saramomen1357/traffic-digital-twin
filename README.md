@@ -127,6 +127,56 @@ outputs/policy_results.csv
 
 ---
 
+📊 Visualization Module
+
+This project includes a visualization module that analyzes and compares YOLO detections, SUMO simulation output, and traffic signal policy performance.
+
+Script
+src/plot_results.py
+
+What this module generates
+
+The script produces a combined 3-panel figure that includes:
+
+YOLO vs SUMO Vehicle Counts (Time-Series)
+Shows how real-world vehicle detection aligns with simulated traffic flow.
+
+Distribution of YOLO-Detected Vehicles
+Histogram representing traffic load variation across the video.
+
+Policy Load Comparison (60s vs 30s Signal Cycle)
+Compares average traffic density across two simulated signal control policies.
+
+How to run
+python src/plot_results.py
+
+Output location
+
+All figures are saved to:
+
+outputs/figures/
+
+
+Example output:
+
+yolo_vs_sumo_timeseries.png
+
+Purpose
+
+This visualization module completes the digital-twin workflow:
+
+YOLOv8 → real-world vehicle detection
+
+SUMO → microscopic traffic modeling
+
+Pandas/Polars → data structuring and aggregation
+
+Matplotlib → final quantitative visualization
+
+It enables real vs simulated traffic comparison and supports evaluating different traffic control policies.
+
+---
+
 # 🧠 Future Improvements
 - Add reinforcement learning for light timing  
 - Live camera streaming  
