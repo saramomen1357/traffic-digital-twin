@@ -136,11 +136,6 @@ outputs/policy_results.csv
 
 ---
 
-# 📜 License
-MIT License (optional — ask me if you want it)
-
----
-
 # 👤 Author
 **Sara Momen (saramomen1357)**  
 Traffic Systems • Digital Twins • AI for Mobility
